@@ -15,7 +15,7 @@ const TimelinePage = () => {
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-black to-gray-800 p-4 text-white">
       <div className="flex items-center justify-center md:px-5 md:py-5 md:mb-5">
         <FaGraduationCap className="mr-3 text-2xl md:text-3xl" />
         <h1 className="mr-3 text-2xl md:text-3xl">Education &</h1>
@@ -33,16 +33,22 @@ const TimelinePage = () => {
 
           return (
             <VerticalTimelineElement
+              contentStyle={{
+                backgroundColor: 'black',
+                boxShadow: 'none'
+              }} 
               key={element.key}
               date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <FaLaptopCode /> : <FaGraduationCap />}
+              contentArrowStyle={{borderRight: '7px solid black'}}
             >
-              <h3 className="vertical-timeline-element-title">
+            
+             <h3 className="vertical-timeline-element-title font-bold">
                 {element.title}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle">
+              <h5 className="vertical-timeline-element-subtitle font-medium">
                 {element.location}
               </h5>
               <ul id="description">
@@ -60,6 +66,7 @@ const TimelinePage = () => {
                   {element.buttonText}
                 </a>
               )}
+           
             </VerticalTimelineElement>
           );
         })}

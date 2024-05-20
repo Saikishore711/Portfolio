@@ -4,14 +4,14 @@ let timelineElements = [
     title: "Junior Full-Stack Developer",
     location: "Hyderabad",
     description:
-      "• Currently developing an e-commerce mobile app using Flutter for the frontend, .NET for the backend, and SQL for the database.\n• Actively developing a desktop Accounts & Registers application using WPF, .NET, and SQL.",
+      "• Actively developing an e-commerce mobile app using Flutter for the frontend, .NET for the backend, and SQL for the database.\n• Developed a desktop Accounts & Registers application using WPF, .NET, and SQL.",
     buttonText: "Mak Arena Solutions Pvt Ltd",
     date: "December 2023 - present",
     icon: "work",
   },
   {
     id: 2,
-    title: "Junior Developer",
+    title: "Backend Developer",
     location: "Hyderabad",
     description:
       "• Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic.\n•  Creating the logic to make the web app function properly, and accomplishing this through the use of server-side languages like Sql and frameworks like .NET and Nodejs.",

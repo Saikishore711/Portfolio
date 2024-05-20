@@ -4,6 +4,9 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import ProjectsPage from './components/Projects';
+import Contactme from './components/Contactme';
+import Sociallinks from './components/Sociallinks';
+import Experience from './components/Experience';
 
 
 function App() {
@@ -12,7 +15,10 @@ function App() {
       <NavBar />
       <Home/>
       <AboutPage/>
+      <Experience />
       <ProjectsPage/>
+      <Contactme />
+      <Sociallinks />
       <Routes >
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={AboutPage} />
