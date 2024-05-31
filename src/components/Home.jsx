@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Typewriter = ({ words, loop, typeSpeed }) => {
   const [displayedText, setDisplayedText] = useState("");
@@ -30,6 +31,7 @@ const Typewriter = ({ words, loop, typeSpeed }) => {
   return <span>{displayedText}</span>;
 };
 const words = ["Mobile", "Web", "Desktop"]; // Array of words
+
 const Home = () => {
   return (
     <>
@@ -45,7 +47,7 @@ const Home = () => {
           </div>
           <div className="flex justify-center items-center">
             <p className="md:text-5xl text-xl font-bold py-4 text-gray-500">
-              Software Developer - 
+              Software Developer -
             </p>
             <p className="md:text-5xl sm:text-4xl text-xl font-bold pl-2">
               <Typewriter loop={true} words={words} typeSpeed={200} />
@@ -81,7 +83,9 @@ const Home = () => {
               </a>
             </div>
             <div className="mt-12 transform transition-transform duration-300 hover:scale-110">
-              <FaAngleDoubleDown className="text-3xl text-gray-600" />
+              <Link to="Experience" smooth={true} duration={500}>
+              <FaAngleDoubleDown className="text-3xl text-gray-600"/>
+              </Link>{" "}
             </div>
           </div>
         </div>

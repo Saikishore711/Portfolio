@@ -32,7 +32,7 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: 'E-commerce Website',
-      description: 'Description of project 1',
+      description: 'Reactjs and TailwindCSS E-commerce website',
       demoLink: 'https://react-ecommerce1212.netlify.app/',
       githubLink: 'https://github.com/Saikishore711/react_Ecommerce',
       imageSrc: ecomImg
@@ -67,9 +67,9 @@ const ProjectsPage = () => {
 
   return (
     <div className='bg-gradient-to-b from-gray-800 to-black w-full min-h-screen'>
-      <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4 text-white items-center ml-20">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 px-20">
+      <div className="container mx-auto">
+      <h1 className="text-2xl font-bold mb-4 text-white items-center ml-5">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 px-5">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
