@@ -1,31 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
 
-// Define Typewriter component outside of Home component
-// eslint-disable-next-line react/prop-types
-// const Typewriter = ({ text, loop, typeSpeed }) => {
-//   const [displayedText, setDisplayedText] = useState("");
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       // eslint-disable-next-line react/prop-types
-//       if (currentIndex < text.length) {
-//         setDisplayedText((prevText) => prevText + text[currentIndex]);
-//         setCurrentIndex((prevIndex) => prevIndex + 1);
-//       } else if (loop) {
-//         setDisplayedText("");
-//         setCurrentIndex(0);
-//       } else {
-//         clearInterval(interval);
-//       }
-//     }, typeSpeed);
-
-//     return () => clearInterval(interval);
-//   }, [text, loop, typeSpeed, currentIndex]);
-
-//   return <span>{displayedText}</span>;
-// };
 const Typewriter = ({ words, loop, typeSpeed }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,7 +45,7 @@ const Home = () => {
           </div>
           <div className="flex justify-center items-center">
             <p className="md:text-5xl text-xl font-bold py-4 text-gray-500">
-              Full Stack Software Developer - 
+              Software Developer - 
             </p>
             <p className="md:text-5xl sm:text-4xl text-xl font-bold pl-2">
               <Typewriter loop={true} words={words} typeSpeed={200} />
