@@ -10,7 +10,7 @@ import Experience from './components/Experience';
 function App() {
   return (
     <>
-      <NavBar />
+    <NavBar />
       <section id="home">
         <Home />
       </section>

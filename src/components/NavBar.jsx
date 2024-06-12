@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import video from '../assets/name.gif';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -29,9 +30,9 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center h-20 text-gray px-5 bg-gradient-to-b from-black to-gray-800 p-4 text-white">
-      <h1 className="text-3xl font-style ">Portfolio</h1>
-      <ul className="hidden md:flex">
+    <div className="bg-black flex justify-between items-center h-20 text-gray px-5 p-4 text-white fixed w-full z-10">
+    <img src={video} alt="Your GIF" className=" h-20 w-32" />
+    <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}

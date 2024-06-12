@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Lottie from 'react-lottie-player';
+import animationData from '../assets/developer.json'
 
 const Typewriter = ({ words, loop, typeSpeed }) => {
   const [displayedText, setDisplayedText] = useState("");
@@ -36,9 +38,15 @@ const Home = () => {
   return (
     <>
       <div className="bg-gradient-to-b from-black to-gray-800 p-4 text-white">
-        <div className="w-full h-screen mx-auto text-center flex flex-col justify-center">
+        <div className="w-full h-screen mx-auto text-center flex flex-col justify-center items-center">
+        <Lottie
+        loop
+        animationData={animationData}
+        play
+        style={{ width: 100, height: 100 }} // Adjust size as needed
+      />  
           <p className="text-[#7469B6] font-bold p-2">Web & App Development</p>
-          <div className="text-3xl py-0 flex justify-center  items-center md:text-7xl  font-bold md:py-6">
+          <div className="text-4xl py-0 flex justify-center  items-center md:text-7xl  font-bold md:py-6">
             <h1 className="py-0 text-2xl mt-2 mr-2 md:text-5xl md:mr-4 md:mt-4 text-gray-500">
               {" "}
               Hello I`m{" "}
