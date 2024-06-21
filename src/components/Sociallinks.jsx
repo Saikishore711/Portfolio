@@ -46,7 +46,7 @@ const Sociallinks = () => {
 
             </>
             ),
-            href:"https://drive.google.com/file/d/1LJ5sB9qFXwjoUlKofPwZU-urtjZC91tS/view?usp=drive_link",
+            href:"https://drive.google.com/file/d/1PA0gbeVWkZ0ynJ5rmY38l8EmVq5cPPcP/view",
             style:'rounded-br-md',
             download:true,
         },

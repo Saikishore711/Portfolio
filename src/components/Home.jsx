@@ -80,7 +80,7 @@ const Home = () => {
                 <FaGithub className="mr-3 text-2xl md:text-3xl" />
               </a>
               <a
-                href="https://drive.google.com/file/d/1LJ5sB9qFXwjoUlKofPwZU-urtjZC91tS/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1PA0gbeVWkZ0ynJ5rmY38l8EmVq5cPPcP/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transform transition-transform duration-300 hover:scale-110"

@@ -4,7 +4,7 @@ let timelineElements = [
     title: "Junior Full-Stack Developer",
     location: "Hyderabad",
     description:
-      "• Actively developing an e-commerce mobile app using Flutter for the frontend, .NET for the backend, and SQL for the database.\n• Developed a desktop Accounts & Registers application using WPF, .NET, and SQL.",
+      "• Developed an e-commerce mobile app using Flutter for the frontend, .NET for the backend, and SQL for the database.\n• Developed a desktop Accounts & Registers application using WPF, .NET, and SQL. \n • Implemented a feature in the admin website for efficiently adding, updating, and deleting product information, including brands, categories, and types, using React.js and ASP.NET Core.\n • Contributed to the HRMS (Human Resource Management System) by implementing features for employee data Management using Reactjs and Nodejs.",
     buttonText: "Mak Arena Solutions Pvt Ltd",
     date: "December 2023 - present",
     icon: "work",

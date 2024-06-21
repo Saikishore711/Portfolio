@@ -3,7 +3,7 @@ import ecomImg from '../assets/ecom.png';
 import Ajwt from '../assets/ang.png';
 import drumkit from '../assets/drumkit.png';
 import next from '../assets/next.png';
-
+import cloudit from '../assets/cloudit.png'
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ title, description, demoLink, githubLink, imageSrc }) => {
@@ -30,6 +30,14 @@ const ProjectCard = ({ title, description, demoLink, githubLink, imageSrc }) => 
 
 const ProjectsPage = () => {
   const projects = [
+    {
+      title: 'Cloud-It',
+      description: 'Social Media Website- ReactTs,appwrite,Tailwindcss and shadcn',
+      demoLink: 'https://cloud-it-ten.vercel.app/',
+      githubLink: 'https://github.com/Saikishore711/SM_Application.git',
+      imageSrc: cloudit
+
+    },
     {
       title: 'E-commerce Website',
       description: 'Reactjs and TailwindCSS E-commerce website',
