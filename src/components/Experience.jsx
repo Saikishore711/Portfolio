@@ -111,9 +111,16 @@ const Experience = () => {
             id: 15,
             imgId: 'aws',
             src: github,
-            title: "AWS EC2",
+            title: "AWS",
             style: 'shadow-gray-500'
         },
+        {
+            id: 15,
+            imgId: 'azure',
+            src: github,
+            title: "Azure",
+            style: 'shadow-gray-500'
+        }
     
     
     
